@@ -24,9 +24,10 @@ public class MainActivity extends FragmentActivity{
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 //使用WebView加载显示url
-                view.loadUrl(url);
+                //view.loadUrl(url);
                 //返回true
-                return true;
+                //return true;
+                return super.shouldOverrideUrlLoading(view,request);
             }
         });
     }
